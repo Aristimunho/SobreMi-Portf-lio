@@ -1,0 +1,321 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.detailStar {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+}
+
+.principal {
+  color: white;
+  font-size: 1.2em;
+  width: 100vw;
+  height: 90vh;
+  background-color: #b896f6;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.principal object {
+  width: 96vw;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.principal .name {
+  text-align: center;
+  width: 98vw;
+  height: 20px;
+  color: white;
+  font-size: 2em;
+}
+
+.principal h3 {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.portfolio {
+  padding: 1em;
+  color: #33335d;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 150vh;
+}
+
+.portfolio .itensPort {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #33335d;
+  font-size: 16px;
+  width: 80vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio .itensPort div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio .itensPort img {
+  width: 255px;
+  height: 200px;
+}
+
+.portfolio .itensPort .hov {
+  width: 250px;
+  height: 41vh;
+  background-color: #b896f678;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  border-radius: 5px;
+  color: white;
+  font-size: 5em;
+  top: 16px;
+}
+
+.portfolio .itensPort .hov:hover {
+  opacity: 1;
+}
+
+.portfolio .itensPort .letterPort {
+  color: #33335d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sobreMim {
+  padding: 30px 25px 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 98.7vw;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #b896f6;
+  color: white;
+  font-size: 1.2em;
+}
+
+.sobreMim .detailOne {
+  background-color: white;
+  width: 98.7vw;
+  height: 20px;
+}
+
+.sobreMim .name {
+  margin-top: 50px;
+}
+
+.sobreMim .star {
+  margin-bottom: 5%;
+}
+
+.sobreMim button {
+  width: 120px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: transparent;
+  border-color: white;
+  border-style: solid;
+  margin-bottom: 100px;
+}
+
+.sobreMim button:hover {
+  background-color: #33335d;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.contactMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0 10px 0;
+  margin-bottom: 60px;
+  color: #33335d;
+  font-size: 1.2em;
+}
+
+.contactMe h2 {
+  width: 98vw;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.contactMe form {
+  font-weight: bolder;
+}
+
+.contactMe form input {
+  width: 90vw;
+  height: 25px;
+  border-color: #817e7e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.contactMe form button {
+  border-style: solid;
+  border-color: #b896f6;
+  border-radius: 5px;
+  width: 60px;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+  background-color: #b896f6;
+}
+
+.contactMe form button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+footer .footer1 {
+  text-align: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #555c81;
+  color: white;
+  font-size: 16px;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer .network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+footer .circle {
+  margin-bottom: 40px;
+}
+
+footer .circle:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+footer .gmail {
+  width: 35px;
+  height: 35px;
+}
+
+.footer2 {
+  background-color: #33335d;
+  color: white;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

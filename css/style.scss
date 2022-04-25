@@ -1,0 +1,211 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin font($color, $size) {
+    color: $color;
+    font-size: $size;
+}
+
+@mixin size($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+body{overflow-x: hidden;}
+
+.detailStar
+{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.principal {
+    @include font(white, 1.2em);
+    @include size(100vw, 90vh);
+    background-color: #b896f6;
+    padding: 25px;
+    @include flex(center, center);
+    flex-direction: column;
+
+    object {
+        @include size(96vw, 200px);
+        @include flex(center, center);
+    }
+
+    .name {
+        text-align: center;
+        @include size(98vw, 20px);
+        @include font(white, 2em);
+      
+    }
+
+    h3 {
+        @include font(white, 1em);
+        text-align: center;
+    }
+}
+
+.portfolio {
+    padding: 1em;
+    @include font(rgb(51, 51, 93), 16px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include size(100vw,150vh );
+   
+
+    .itensPort {
+        flex-wrap: wrap;
+        @include font(rgb(51, 51, 93), 16px);
+        @include size(80vw,100vh );
+        display:flex;
+        div{
+            @include flex(center,center);
+            flex-direction: column;
+        }
+
+        img 
+        {@include size(255px, 200px); }
+       
+        .hov
+        {
+            @include size(250px, 41vh);
+            background-color: #b896f678;
+            opacity: 0;
+            z-index: 2;
+            position: absolute;
+            border-radius: 5px;
+            @include font(white,5em);
+            top: 16px;
+            &:hover
+            {
+                opacity: 1;
+            }
+        }
+
+        .letterPort
+        { 
+            @include font(rgb(51, 51, 93), 20px); 
+            font-weight: bold;
+        }
+
+    }
+
+
+}
+
+.sobreMim {
+    padding: 30px 25px 25px 25px;
+    @include flex(center, center);
+    @include size(98.7vw, 100vh);
+    flex-direction: column;
+    background-color: #b896f6;
+    ;
+    @include font(white, 1.2em);
+
+    .detailOne {
+        background-color: rgb(255, 255, 255);
+        @include size(98.7vw, 20px);
+    
+    }
+    .name{margin-top: 50px;}
+    .star{margin-bottom: 5%}
+  
+    button {
+        @include size(120px, 35px);
+        @include font(white, 16px);
+        border-radius: 6px;
+        background-color: transparent;
+        border-color: white;
+        border-style: solid;
+        margin-bottom: 100px;
+        &:hover
+        {
+            background-color:rgb(51, 51, 93);
+            transform: scale(1.05);
+        }
+    }
+    
+}
+
+.contactMe {
+    @include flex(center, center);
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    margin-bottom: 60px;
+    @include font(rgb(51, 51, 93), 1.2em);
+
+    h2 {
+        @include size(98vw, 20px);
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    form {
+        font-weight: bolder;
+
+        input {
+            @include size(90vw, 25px);
+            border-color: rgb(129, 126, 126);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        button {
+            border-style: solid;
+            border-color: #b896f6;
+            border-radius: 5px;
+            @include size(60px, 35px);
+            @include font(white, 16px);
+            background-color: #b896f6;
+            &:hover{transform: scale(1.05);}
+        }
+    }
+}
+
+footer {
+    .footer1 {
+        text-align: center;
+        padding: 20px;
+        @include flex(center, center);
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: rgb(85, 92, 129);
+        @include font(white, 16px);
+    }
+
+    h5 {
+        font-weight: bold;
+    }
+
+    .network {
+        @include flex(center, center);
+        gap: 5px;
+    }
+
+    .circle {
+        margin-bottom: 40px;
+        &:hover{transform: scale(1.2,1.2)}
+    }
+
+    .gmail { @include size(35px, 35px);}
+
+
+}
+
+.footer2 {
+    background-color: rgb(51, 51, 93);
+    @include font(white, 16px);
+    @include flex(center, center);
+}
